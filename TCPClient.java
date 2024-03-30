@@ -56,7 +56,7 @@ public class TCPClient {
 
         // to get the member name from user
         // also to set the member name to the member object by validating it
-        System.out.print(": ");
+        System.out.print("Enter First Name: ");
         String firstName = inputScanner.nextLine();
         boolean isFirstNameValid = false;
 
