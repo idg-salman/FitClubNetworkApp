@@ -74,7 +74,7 @@ class ClientConnection extends Thread {
   ClientConnection(Socket clientSocket, int clientNumber) {
     try {
       // assignning upcomming client socket to this class object
-      this.clientSocket = ;
+      this.clientSocket = clientSocket;
       this.clientNumber = clientNumber;
 
       // assign input and output streams to this class object
