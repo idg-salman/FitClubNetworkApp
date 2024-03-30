@@ -32,7 +32,7 @@ public class Member implements Serializable {
     String address,
     String phoneNumber
   ) {
-    this.setFirstName(first);
+    this.setFirstName(firstName);
     this.setLastName(lastName);
     this.setAddress(address);
     this.setPhoneNumber(phoneNumber);
