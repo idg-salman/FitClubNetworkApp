@@ -60,7 +60,7 @@ public class UDPClient {
       System.out.println(e.getMessage());
     } catch (IOException e) {
       System.out.println(e.getMessage());
-    } catch (Exception e) {
+    } catch ( e) {
       e.printStackTrace();
     } finally {
       if (datagramSocket != null) datagramSocket.close();
