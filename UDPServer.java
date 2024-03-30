@@ -62,7 +62,7 @@ public class UDPServer {
             );
 
             // created a string builder to store the data in a string format
-            StringBuilder stringBuilder = new StringBuilder();
+            StringBuilder stringBuilder = new ();
 
             try {
               // created a string format to display the data in a table format
