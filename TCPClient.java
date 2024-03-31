@@ -52,7 +52,7 @@ public class TCPClient {
             System.out.print("Enter Member Number: ");
             memberNumber = inputScanner.nextLine().trim();
           }
-        } while (!isMemberNumberValid);
+        } while (!isMemberNumberValid); //Stuck in an infinite loop until a valid input is made
 
         // to get the member name from user
         // also to set the member name to the member object by validating it
@@ -70,7 +70,7 @@ public class TCPClient {
             firstName = inputScanner.nextLine();
             continue;
           }
-        } while (!isFirstNameValid);
+        } while (!isFirstNameValid); //Stuck in an infinite loop until a valid input is made
 
         // to get the member last name from user
         // also to set the member last name to the member object by validating it
@@ -88,7 +88,7 @@ public class TCPClient {
             lastName = inputScanner.nextLine();
             continue;
           }
-        } while (!isLastNameValid);
+        } while (!isLastNameValid); //Stuck in an infinite loop until a valid input is made
 
         // to get the member address from user
         // also to set the member address to the member object by validating it
@@ -106,7 +106,7 @@ public class TCPClient {
             address = inputScanner.nextLine();
             continue;
           }
-        } while (!isAddressValid);
+        } while (!isAddressValid); //Stuck in an infinite loop until a valid input is made
 
         // to get the member phone number from user
         // also to set the member phone number to the member object by validating it
@@ -124,7 +124,7 @@ public class TCPClient {
             phoneNumber = inputScanner.nextLine();
             continue;
           }
-        } while (!isPhoneNumberValid);
+        } while (!isPhoneNumberValid); //Stuck in an infinite loop until a valid input is made
 
         // prepare the data to be sent to the server
         String dataPayload = String.format(
@@ -135,6 +135,8 @@ public class TCPClient {
           phoneNumber
         );
 
+        /* Important Finding: Had some trouble with repeat as it turns out repeat 
+        does not work in Java versions less than 11 */
         System.out.println("-".repeat(44));
         System.out.println("Sending Data to Server...");
 

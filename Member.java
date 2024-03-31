@@ -13,7 +13,7 @@
 import java.io.Serializable;
 
 public class Member implements Serializable {
-
+  //Private Variables
   private String firstName;
   private String lastName;
   private String address;
@@ -38,10 +38,12 @@ public class Member implements Serializable {
     this.setPhoneNumber(phoneNumber);
   }
 
+  //For getting the private variables outside of the class
   public String getFirstName() {
     return this.firstName;
   }
 
+  //For updating the private variables
   public void setFirstName(String firstName) {
     if (firstName == null || firstName.trim().equals("")) {
       throw new IllegalArgumentException("First name cannot be empty");
@@ -60,6 +62,7 @@ public class Member implements Serializable {
     this.firstName = firstName.trim();
   }
 
+  //For getting the private variables outside of the class
   public String getLastName() {
     return this.lastName;
   }
@@ -82,10 +85,12 @@ public class Member implements Serializable {
     this.lastName = lastName.trim();
   }
 
+  //For getting the private variables outside of the class
   public String getAddress() {
     return this.address;
   }
 
+  //For updating the private variables
   public void setAddress(String address) {
     if (address == null || address.trim().equals("")) {
       throw new IllegalArgumentException("Address cannot be empty");
@@ -102,10 +107,12 @@ public class Member implements Serializable {
     this.address = address.trim();
   }
 
+  //For getting the private variables
   public String getPhoneNumber() {
     return this.phoneNumber;
   }
 
+  //For updating the private variables
   public void setPhoneNumber(String phoneNumber) {
     if (phoneNumber == null || phoneNumber.trim().equals("")) {
       throw new IllegalArgumentException("Phone number cannot be empty");

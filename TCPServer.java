@@ -62,6 +62,7 @@ public class TCPServer {
   }
 }
 
+//Using thread to allow multiple processes running at the same time.
 class ClientConnection extends Thread {
 
   private static final String TEXT_FILENAME = "memberlist.txt";
